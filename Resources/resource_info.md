@@ -1,0 +1,1 @@
+### this is the folder where all the important keywords like 'openbrowser', 'closebrowser', 'pageobject' etc. Structing and definong of the page functionality into a page object file. Will be covered further.

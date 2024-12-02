@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-12-02T05:56:45.801580" rpa="false" schemaversion="5">
+<suite id="s1" name="basicSearch user def key in res" source="C:\Users\raj.kiran.arun.kumar\OneDrive - Accenture\Documents\Python Scripts\Robo-frame-selena\Tests\Ebay\basicSearch_user_def_key_in_res.robot">
+<test id="s1-t1" name="Verify the basic search functionality for eBay" line="16">
+<kw name="Start TestCase" owner="CommonFunctionality">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-02T05:56:46.152482" level="INFO">Opening browser 'edge' to base url 'https://www.ebay.de/'.</msg>
+<arg>https://www.ebay.de/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-02T05:56:46.152482" elapsed="7.888426"/>
+</kw>
+<status status="PASS" start="2024-12-02T05:56:46.151482" elapsed="7.889426"/>
+</kw>
+<kw name="Verify Search Results" owner="eBay_UserDefKeyw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-02T05:56:54.042036" level="INFO">Typing text 'mobile' into text field '//*[@id="gh-ac"]'.</msg>
+<arg>//*[@id="gh-ac"]</arg>
+<arg>mobile</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-02T05:56:54.042036" elapsed="0.142750"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-12-02T05:56:54.184786" level="INFO">Sending key(s) ('Return',) to id:gh-btn element.</msg>
+<msg time="2024-12-02T05:56:56.573796" level="INFO">Sending keys Return</msg>
+<arg>id:gh-btn</arg>
+<arg>Return</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-12-02T05:56:54.184786" elapsed="2.489861"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-02T05:56:56.702435" level="INFO">Current page contains text 'Ergebnisse für mobile'.</msg>
+<arg>Ergebnisse für mobile</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-12-02T05:56:56.674647" elapsed="0.027788"/>
+</kw>
+<status status="PASS" start="2024-12-02T05:56:54.040908" elapsed="2.661527"/>
+</kw>
+<kw name="Filter results by condition" owner="eBay_UserDefKeyw">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-12-02T05:56:56.703435" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="nid-x0t-18"]/button'.</msg>
+<msg time="2024-12-02T05:56:56.857380" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-02T05:56:56.857380" level="FAIL">Element with locator 'xpath://*[@id="nid-x0t-18"]/button' not found.</msg>
+<arg>xpath://*[@id="nid-x0t-18"]/button</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="FAIL" start="2024-12-02T05:56:56.703435" elapsed="0.235798">Element with locator 'xpath://*[@id="nid-x0t-18"]/button' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="nid-x0t-18"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-02T05:56:56.940232" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-12-02T05:56:56.940232" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Down" owner="SeleniumLibrary">
+<arg>xpath://*[@id="s0-61-0-13-8-4-1-0-5[0]-70-39-1-content-menu"]/li[4]/a/span</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-02T05:56:56.940232" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="s0-61-0-13-8-4-1-0-5[0]-70-39-1-content-menu"]/li[4]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-02T05:56:56.940232" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-12-02T05:56:56.703435" elapsed="0.237303">Element with locator 'xpath://*[@id="nid-x0t-18"]/button' not found.</status>
+</kw>
+<kw name="Verify filter results" owner="eBay_UserDefKeyw">
+<status status="NOT RUN" start="2024-12-02T05:56:56.940738" elapsed="0.000000"/>
+</kw>
+<kw name="Finish TestCase" owner="CommonFunctionality">
+<status status="NOT RUN" start="2024-12-02T05:56:56.940738" elapsed="0.000000"/>
+</kw>
+<doc>This test case verifies the basic search</doc>
+<tag>Functional</tag>
+<status status="FAIL" start="2024-12-02T05:56:46.150243" elapsed="10.790495">Element with locator 'xpath://*[@id="nid-x0t-18"]/button' not found.</status>
+</test>
+<doc>Basic Search functionality</doc>
+<status status="FAIL" start="2024-12-02T05:56:45.803675" elapsed="11.138654"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="basicSearch user def key in res">basicSearch user def key in res</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

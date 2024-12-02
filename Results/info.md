@@ -1,0 +1,1 @@
+### This is the folder where all the results of the testcases that will be run is stored. Here the results like logs and other result oriented objects are stored.

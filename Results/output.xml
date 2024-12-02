@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-12-01T13:31:32.717880" rpa="false" schemaversion="5">
+<suite id="s1" name="basicSearch" source="C:\Users\raj.kiran.arun.kumar\OneDrive - Accenture\Documents\Python Scripts\Robo-frame-selena\Tests\Ebay\basicSearch.robot">
+<test id="s1-t1" name="Verify the basic search functionality for eBay" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-01T13:31:33.082642" level="INFO">Opening browser 'edge' to base url 'https://www.ebay.de/'.</msg>
+<arg>https://www.ebay.de/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-01T13:31:33.082642" elapsed="6.649851"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-01T13:31:39.733494" elapsed="0.082958"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-01T13:31:39.817456" level="INFO">Typing text 'mobile' into text field '//*[@id="gh-ac"]'.</msg>
+<arg>//*[@id="gh-ac"]</arg>
+<arg>mobile</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-01T13:31:39.817456" elapsed="0.172972"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-12-01T13:31:39.991435" level="INFO">Sending key(s) ('Return',) to id:gh-btn element.</msg>
+<msg time="2024-12-01T13:31:42.539776" level="INFO">Sending keys Return</msg>
+<arg>id:gh-btn</arg>
+<arg>Return</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-12-01T13:31:39.990428" elapsed="2.709767"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-01T13:31:42.723020" level="INFO">Current page contains text 'Ergebnisse für mobile'.</msg>
+<arg>Ergebnisse für mobile</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-12-01T13:31:42.700195" elapsed="0.022825"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-01T13:31:42.724015" elapsed="2.243369"/>
+</kw>
+<doc>This test case verifies the basic search</doc>
+<tag>Functional</tag>
+<status status="PASS" start="2024-12-01T13:31:33.081645" elapsed="11.887190"/>
+</test>
+<doc>Basic Search functionality</doc>
+<status status="PASS" start="2024-12-01T13:31:32.718900" elapsed="12.250936"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="basicSearch">basicSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
